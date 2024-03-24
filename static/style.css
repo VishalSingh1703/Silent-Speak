@@ -1,0 +1,19 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;  /* Set minimum height for full viewport */
+}
+
+#camera-feed {
+    width: 70%;
+    height: 70vh;  /* Adjust height as needed */
+    border: 1px solid #ddd;
+    overflow: hidden;
+}
+
+#camera-feed img {
+    width: 100%;  /* Fill the entire box */
+    height: 100%;  /* Fill the entire box */
+    object-fit: cover;  /* Maintain aspect ratio and cover the box */
+}
