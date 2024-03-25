@@ -1,4 +1,4 @@
-from flask import Flask, render_template, Response
+from flask import Flask, render_template, Response, request
 
 import cv2
 
@@ -23,6 +23,10 @@ def index():
 @app.route('/capture')
 def capture():
     return render_template('capture.html')
+
+@app.route('/convert')
+def convert():
+    return render_template('convert.html')
 
 @app.route('/video_feed')
 def video_feed():
