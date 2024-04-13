@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block body %}
-<form action="/convert" method="get">
+<form action="/convert" method="post">
     <div>
         <textarea autocomplete="off" autofocus name="name" placeholder="Insert your text here" rows="10" cols="50" required></textarea>
     </div>
@@ -10,3 +10,5 @@
     </div>
 </form>
 {% endblock %}
+
+
