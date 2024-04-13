@@ -5,6 +5,11 @@
     overflow: hidden;
 }
 
+/* body{
+    background-color: black;
+    color: white
+} */
+
 #camera-feed img {
     width: 100%;  /* Fill the entire box */
     height: 100%;  /* Fill the entire box */
@@ -50,15 +55,25 @@ button:hover {
     color: white; /* White text */
 }
 
+.header
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .button-container {
+    height: 70vh;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     width: 80%; /* Adjust as needed */
     margin: 0 auto; /* Center the container */
 }
 
 .left-button, .right-button {
+    height: 63vh;
+    width: 39vw;
     background-color: #01284d; /* Green background */
     border: none; /* Remove borders */
     color: white; /* White text */
@@ -68,8 +83,19 @@ button:hover {
     display: inline-block; /* Make display inline */
     font-size: 16px; /* Font size */
     cursor: pointer; /* Cursor style */
-    border-radius: 8px; /* Rounded corners */
+    border-radius: 20%; /* Rounded corners */
     transition-duration: 0.4s; /* Transition */
+    background-size: cover; /* Ensure the background image covers the entire button */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    background-position: center; /* Center the background image */
+}
+
+.left-button{
+    background-image: url("translator.jpg");
+}
+
+.right-button{
+    background-image: url("generator.jpg");
 }
 
 .left-button:hover, .right-button:hover {
@@ -77,3 +103,6 @@ button:hover {
     color: white; /* White text */
 }
 
+p{
+    padding: 20px;
+}
